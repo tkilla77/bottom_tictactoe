@@ -8,6 +8,7 @@ ttt-brett {
     flex: 1;
     max-width: 100cqmin;
     max-height: 100cqmin;
+    box-sizing: border-box;
     margin: auto;
     aspect-ratio: 1/1;
     display: grid;
