@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+ttt-brett {
+    flex: 1;
+    max-width: 100cqmin;
+    max-height: 100cqmin;
+    margin: auto;
+    aspect-ratio: 1/1;
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+ttt-zelle {
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    text-align: center;
+    font-size: 25cqmin;
+    font-family: monospace;
+}
