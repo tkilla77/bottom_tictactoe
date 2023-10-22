@@ -4,13 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tictactoe.css">
+    <script type="module" src="ttt_local_controller.js"></script>
     <title>TicTacToe</title>
   </head>
   <body>
-    <ttt-brett>
-      <ttt-zelle>0</ttt-zelle><ttt-zelle>1</ttt-zelle><ttt-zelle>2</ttt-zelle>
-      <ttt-zelle>3</ttt-zelle><ttt-zelle>4</ttt-zelle><ttt-zelle>5</ttt-zelle>
-      <ttt-zelle>6</ttt-zelle><ttt-zelle>7</ttt-zelle><ttt-zelle>8</ttt-zelle>
-    </ttt-brett>
+    <ttt-game>
+        <ttt-brett>
+          <ttt-zelle>0</ttt-zelle><ttt-zelle>1</ttt-zelle><ttt-zelle>2</ttt-zelle>
+          <ttt-zelle>3</ttt-zelle><ttt-zelle>4</ttt-zelle><ttt-zelle>5</ttt-zelle>
+          <ttt-zelle>6</ttt-zelle><ttt-zelle>7</ttt-zelle><ttt-zelle>8</ttt-zelle>
+        </ttt-brett>
+        <ttt-info>Status: <ttt-state></ttt-state></ttt-info>
+        <ttt-info>Am Zug: <ttt-next></ttt-next></ttt-info>
+        
+    </ttt-game>
   </body>
 </html>
