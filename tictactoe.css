@@ -33,6 +33,11 @@ ttt-zelle {
     text-align: center;
     font-size: 25cqmin;
     font-family: monospace;
-
 /* hier */      background-color: yellow;
+}
+ttt-zelle[data-state='X'] {
+    background-color: aquamarine;
+}
+ttt-zelle[data-state='0'] {
+    background-color: greenyellow;
 }
