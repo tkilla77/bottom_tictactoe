@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# JS source
+**/*.js
+**/*.js.map
+
 # Distribution / packaging
 .Python
 build/
