@@ -38,6 +38,13 @@ ttt-zelle {
 ttt-zelle[data-state='X'] {
     background-color: aquamarine;
 }
+ttt-zelle[data-state='X']:after {
+    content: '✗'; /* ☓✗×乂 */
+}
+
 ttt-zelle[data-state='0'] {
     background-color: greenyellow;
+}
+ttt-zelle[data-state='0']:after {
+    content: '◯'; /* ⚬◯○ */
 }
