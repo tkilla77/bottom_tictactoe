@@ -12,7 +12,6 @@ export class TicTacToeView {
         for (let i = 0; i < 9; i++) {
             let contents = gamestate.board[i];
             let cell = this.board.children[i];
-            cell.textContent = contents;
             cell.setAttribute('data-state', contents);
         }
         this.next.textContent = gamestate.next;

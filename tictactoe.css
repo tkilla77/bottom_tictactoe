@@ -6,6 +6,8 @@ body {
 }
 ttt-game {
     flex: 1;
+    max-width: 100cqmin;
+    max-height: 100cqmin;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -14,13 +16,11 @@ ttt-game {
 }
 ttt-brett {
     flex: 1;
-    max-width: 100cqmin;
-    max-height: 100cqmin;
     box-sizing: border-box;
     aspect-ratio: 1/1;
     display: grid;
-    gap: 1em;
-    padding: 1em;
+    gap: clamp(0.2em, 5cqmin, 1em);
+    padding: clamp(0.2em, 5cqmin, 1em);
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     background-color: darkblue;
     border-radius: 2%;
@@ -39,6 +39,13 @@ ttt-zelle {
 ttt-zelle[data-state='X'] {
     background-color: aquamarine;
 }
+ttt-zelle[data-state='X']:after {
+    content: '✗'; /* ☓✗×乂 */
+}
+
 ttt-zelle[data-state='0'] {
     background-color: yellow;
+}
+ttt-zelle[data-state='0']:after {
+    content: '◯'; /* ⚬◯○ */
 }
