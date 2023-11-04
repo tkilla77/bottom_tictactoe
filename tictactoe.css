@@ -5,6 +5,8 @@ body {
     display: flex;
 }
 ttt-brett {
+    background-color: blue;
+    border-radius: 2%;
     flex: 1;
     max-width: 100cqmin;
     max-height: 100cqmin;
@@ -17,9 +19,13 @@ ttt-brett {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 ttt-zelle {
+    border-radius: 2%;
     overflow: hidden;
+    box-shadow: 2px 2px 5px 5px darkblue;
     aspect-ratio: 1/1;
     text-align: center;
     font-size: 25cqmin;
     font-family: monospace;
+
+/* hier */      background-color: yellow;
 }
