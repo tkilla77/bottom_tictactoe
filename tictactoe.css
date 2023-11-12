@@ -4,6 +4,7 @@ body {
     height: 100vh;
     display: flex;
 }
+
 ttt-brett {
     background-color: blue;
     border-radius: 2%;
@@ -18,6 +19,7 @@ ttt-brett {
     padding: 1em;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
+
 ttt-zelle {
     border-radius: 2%;
     overflow: hidden;
@@ -27,5 +29,14 @@ ttt-zelle {
     font-size: 25cqmin;
     font-family: monospace;
 
-/* hier */      background-color: yellow;
+    /* hier */
+    background-color: yellow;
+}
+
+ttt-zelle[data-state="X"] {
+    background-color: red;
+}
+
+ttt-zelle[data-state="O"] {
+    background-color: green;
 }
