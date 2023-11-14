@@ -2,7 +2,7 @@ export class TicTacToeController {
     private state: GameState;
 
     constructor(game: TicTacToe, view: TicTacToeView) {
-        this.state = game.toJson()
+        this.state = game;
         view.updateView(this.state);
 
         let i = 0
@@ -10,7 +10,7 @@ export class TicTacToeController {
             const index = i;
             cell.addEventListener("click", (e) => {
                 game.setPiece(this.state.next, index);
-                this.state = game.toJson();
+                this.state = game;
                 view.updateView(this.state);
             });
             i++;

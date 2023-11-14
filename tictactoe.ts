@@ -32,8 +32,8 @@ export interface GameState {
 /** A game of TicTacToe. */
 export class TicTacToe implements GameState {
     board: CellContent[] = [Empty.EMPTY, Empty.EMPTY, Empty.EMPTY,
-                                    Empty.EMPTY, Empty.EMPTY, Empty.EMPTY,
-                                    Empty.EMPTY, Empty.EMPTY, Empty.EMPTY];
+                            Empty.EMPTY, Empty.EMPTY, Empty.EMPTY,
+                            Empty.EMPTY, Empty.EMPTY, Empty.EMPTY];
     
     next = Player.PLAYER_X;
     state = State.PLAYING;
@@ -82,7 +82,8 @@ export class TicTacToe implements GameState {
     }
 
     checkTie() {
-        if (this.state == State.PLAYING && this.board.indexOf(Empty.EMPTY) == -1) {
+        if (this.state == State.PLAYING 
+                && this.board.indexOf(Empty.EMPTY) == -1) {
             this.state = State.TIE;
         }
     }
