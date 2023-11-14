@@ -1,0 +1,29 @@
+{
+  "name": "tictactoe_server",
+  "version": "1.0.0",
+  "description": "A server for tictactoe games.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkilla77/bottom_tictactoe.git"
+  },
+  "author": "bottom.ch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkilla77/bottom_tictactoe/issues"
+  },
+  "homepage": "https://github.com/tkilla77/bottom_tictactoe#readme",
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@feathersjs/feathers": "^5.0.11",
+    "@feathersjs/koa": "^5.0.11",
+    "@feathersjs/socketio": "^5.0.11"
+  }
+}
