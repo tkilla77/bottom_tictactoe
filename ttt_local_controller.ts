@@ -1,11 +1,7 @@
 export class TicTacToeController {
-    private view: TicTacToeView;
-    private game: TicTacToe;
-    private state;
+    private state: GameState;
 
     constructor(game: TicTacToe, view: TicTacToeView) {
-        this.game = game;
-        this.view = view;
         this.state = game.toJson()
         view.updateView(this.state);
 
@@ -23,11 +19,11 @@ export class TicTacToeController {
 }
 
 import { TicTacToeView, findView } from "./ttt_view.js";
-import { TicTacToe, Player } from "./tictactoe.js";
+import { TicTacToe, GameState } from "./tictactoe.js";
 export function createController(root: Element) {
     let game = new TicTacToe();
     let view = findView(root);
-    let controller = new TicTacToeController(game, view);
+    new TicTacToeController(game, view);
 }
 
 createController(document.body);

@@ -1,3 +1,4 @@
+import { GameState } from "./tictactoe.js";
 export class TicTacToeView {
     board: Element;
     state: Element;
@@ -8,7 +9,7 @@ export class TicTacToeView {
         this.state = state;
         this.next = next;
     }
-    updateView(gamestate) {
+    updateView(gamestate: GameState) {
         for (let i = 0; i < 9; i++) {
             let contents = gamestate.board[i];
             let cell = this.board.children[i];

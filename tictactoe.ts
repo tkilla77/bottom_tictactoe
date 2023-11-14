@@ -24,14 +24,19 @@ const enum Empty {
     EMPTY = ""
 };
 type CellContent = Empty | Player;
+export interface GameState {
+    board: CellContent[];
+    next: Player;
+    state: State;
+}
 /** A game of TicTacToe. */
-export class TicTacToe {
-    private board: CellContent[] = [Empty.EMPTY, Empty.EMPTY, Empty.EMPTY,
+export class TicTacToe implements GameState {
+    board: CellContent[] = [Empty.EMPTY, Empty.EMPTY, Empty.EMPTY,
                                     Empty.EMPTY, Empty.EMPTY, Empty.EMPTY,
                                     Empty.EMPTY, Empty.EMPTY, Empty.EMPTY];
     
-    private next = Player.PLAYER_X;
-    private state = State.PLAYING;
+    next = Player.PLAYER_X;
+    state = State.PLAYING;
 
     setPiece(player: Player, cell: Cell) {
         if (this.state != State.PLAYING) {
